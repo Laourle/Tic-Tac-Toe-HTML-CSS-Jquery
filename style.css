@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+header{
+    margin-top: 100px;
+    text-align: center;
+}
+header h1{
+    font-size: 55px;
+    color: blue;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 150px) 1fr;
+    grid-template-rows: 1fr repeat(3, 150px) 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    height: 100vh;
+    }
+    
+    .div1 { grid-area: 2 / 2 / 3 / 3; }
+    .div2 { grid-area: 3 / 2 / 4 / 3; }
+    .div3 { grid-area: 4 / 2 / 5 / 3; }
+    .div4 { grid-area: 2 / 3 / 3 / 4; }
+    .div5 { grid-area: 3 / 3 / 4 / 4; }
+    .div6 { grid-area: 4 / 3 / 5 / 4; }
+    .div7 { grid-area: 2 / 4 / 3 / 5; }
+    .div8 { grid-area: 3 / 4 / 4 / 5; }
+    .div9 { grid-area: 4 / 4 / 5 / 5; }
+
+.grid{
+    background-color: grey;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+}
+
+
+.grid:hover{
+    opacity: 80%;
+}
+
+.xWin{
+    background-color: red;
+}
+
+.oWin{
+    background-color: green;
+}
+
+.resultat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+     padding: 25px;
+    margin-bottom: 100px;
+}
+
+.noWin{
+    background-color: grey;
+}
+
+button{
+    margin: 10px;
+    background-color: white;
+    border: none;
+    width: 150px;
+    color: blue;
+    font-size: 25px;
+    cursor: pointer;
+    height: 50px;
+}
